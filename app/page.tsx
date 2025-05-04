@@ -82,7 +82,7 @@ export default function Page() {
                         className="mb-32 grid grid-cols-1 md:grid-cols-12 gap-8"
                         data-oid="j:1svtl"
                     >
-                        <div className="md:col-span-7 md:col-start-2" data-oid="qqj5hmw">
+                        <div className="md:col-span-6 md:col-start-2" data-oid="qqj5hmw">
                             <h1
                                 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
                                 data-oid="rr81c0k"
@@ -124,6 +124,18 @@ export default function Page() {
                                         {submitted ? "You're In" : 'Join Waitlist'}
                                     </button>
                                 </form>
+                            </div>
+                        </div>
+
+                        <div
+                            className="md:col-span-4 flex items-center justify-center"
+                            data-oid="uh-ws_5"
+                        >
+                            <div
+                                className="transform hover:scale-105 transition-transform duration-500 hover:rotate-1"
+                                data-oid="1k0ikp_"
+                            >
+                                <TransparentPhoneScanner data-oid=":1qvc9m" />
                             </div>
                         </div>
                     </section>
