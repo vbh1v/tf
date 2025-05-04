@@ -15,13 +15,6 @@ const TransparentPhoneScanner = () => {
                         data-oid="3grp.89"
                     >
                         {/* Phone Header */}
-                        <div
-                            className="absolute -top-6 text-xs text-green-400/80 font-mono"
-                            data-oid="taps5cs"
-                            key="olk-fznQ"
-                        >
-                            mobile phone
-                        </div>
 
                         {/* Phone Notch */}
                         <div
@@ -42,14 +35,11 @@ const TransparentPhoneScanner = () => {
                         </div>
 
                         {/* Screen Text */}
-                        <div className="text-center mt-8 mb-4" data-oid="eh1.ux3" key="olk-wzIa">
-                            <div className="text-sm text-green-400/80 font-mono" data-oid="6806cbq">
-                                transparent
-                            </div>
-                            <div className="text-sm text-green-400/80 font-mono" data-oid="-i9uo0f">
-                                screen
-                            </div>
-                        </div>
+                        <div
+                            className="text-center mt-8 mb-4"
+                            data-oid="eh1.ux3"
+                            key="olk-wzIa"
+                        ></div>
 
                         {/* Home Button / Scanner */}
                         <div
@@ -71,7 +61,7 @@ const TransparentPhoneScanner = () => {
                 <div className="relative" data-oid="efe_o7c">
                     {/* Diet Coke */}
                     <div
-                        className="absolute w-32 h-64 border border-green-400/30 rounded-lg flex items-center justify-center bg-gray-900/20 backdrop-blur-sm -left-[193px] -top-[132px]"
+                        className="absolute w-32 h-64 border border-green-400/30 rounded-lg flex items-center justify-center bg-gray-900/20 backdrop-blur-sm left-[64px] top-[113px]"
                         data-oid="p_f8v4o"
                     >
                         <div
