@@ -26,12 +26,49 @@ const TransparentPhoneScanner = () => {
                         className="border-2 border-green-400/50 rounded-[40px] relative flex flex-col items-center p-4 bg-gray-900/30 backdrop-blur-sm h-[590px] w-[351px]"
                         data-oid="3grp.89"
                     >
-                        {/* Phone Header */}
+                        {/* Dynamic Island */}
+                        <motion.div
+                            className="w-[120px] h-[35px] bg-black rounded-full mt-2 mb-4 flex items-center justify-center relative overflow-hidden"
+                            animate={{
+                                width: isScanning ? 150 : 120,
+                                transition: { duration: 0.3 },
+                            }}
+                            data-oid="dynamic-island"
+                        >
+                            {/* Camera dot */}
+                            <div
+                                className="w-2 h-2 rounded-full bg-gray-700 absolute right-4"
+                                data-oid="k7d62d9"
+                            ></div>
 
-                        {/* Phone Notch */}
+                            {/* Dynamic content */}
+                            <AnimatePresence data-oid="kwyaw_2">
+                                {isScanning && (
+                                    <motion.div
+                                        className="flex items-center space-x-2"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        exit={{ opacity: 0 }}
+                                        data-oid="qj8hay1"
+                                    >
+                                        <div
+                                            className="w-2 h-2 rounded-full bg-green-500 animate-pulse"
+                                            data-oid=":g93354"
+                                        ></div>
+                                        <span
+                                            className="text-[10px] text-green-400 font-mono"
+                                            data-oid="4k0n4u2"
+                                        >
+                                            SCANNING
+                                        </span>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </motion.div>
 
+                        {/* Scanner in the middle */}
                         <div
-                            className="border border-green-400/40 rounded-lg flex flex-col items-center justify-center mt-12 mb-16 relative overflow-hidden h-[85px] w-[179px]"
+                            className="border border-green-400/40 rounded-lg flex flex-col items-center justify-center relative overflow-hidden h-[85px] w-[179px] mt-[160px] mb-[160px]"
                             data-oid="u8b63vk"
                             key="olk-Qpea"
                         >
@@ -82,18 +119,21 @@ const TransparentPhoneScanner = () => {
                         {/* Barcode Scanner Area */}
 
                         {/* Screen Text */}
-
                         <div
-                            className="text-center mt-8 mb-4"
+                            className="text-center absolute bottom-[100px] w-full"
                             data-oid="eh1.ux3"
                             key="olk-wzIa"
-                        ></div>
+                        >
+                            <div className="text-sm text-green-400/80 font-mono" data-oid="yk745r7">
+                                {isScanning ? 'Processing...' : 'Aim at barcode'}
+                            </div>
+                        </div>
 
                         {/* Home Button / Scanner */}
 
                         {/* Launch Market Button */}
                         <motion.button
-                            className="absolute bottom-12 px-6 py-3 bg-green-600 text-white font-medium rounded-md border border-green-500 shadow-lg"
+                            className="absolute bottom-12 px-6 py-3 bg-green-600 text-white font-medium rounded-full border border-green-500 shadow-lg"
                             whileHover={{
                                 scale: 1.05,
                                 boxShadow: '0 0 15px rgba(74, 222, 128, 0.5)',
