@@ -248,62 +248,183 @@ export default function Page() {
                     </section>
 
                     {/* Explainer */}
-                    <section
-                        className="mb-32 grid grid-cols-1 md:grid-cols-12 gap-12"
-                        data-oid="l_-4.26"
-                    >
-                        <div className="md:col-span-5 md:col-start-2" data-oid="ogm3gqz">
-                            <h3
-                                className="text-2xl font-bold mb-6 text-green-400"
-                                data-oid="k8t_k2_"
-                            >
-                                How it works
-                            </h3>
-                            <p className="text-lg text-gray-300 mb-6" data-oid="s.h_:ty">
-                                Scan any barcode. Create a market. Bet on the truth. It's that
-                                simple.
-                            </p>
-                            <p className="text-lg text-gray-300" data-oid="iiikax9">
-                                When companies make claims, we turn them into bets. When the truth
-                                comes out, winners get paid.
-                            </p>
-                        </div>
-                        <div className="md:col-span-5" data-oid="7vcyhlj">
+                    <section className="mb-32 relative py-16" data-oid="l_-4.26">
+                        {/* Background decorative elements */}
+                        <div
+                            className="absolute inset-0 overflow-hidden pointer-events-none opacity-20"
+                            data-oid="bufr4k6"
+                        >
                             <div
-                                className="border border-gray-800 p-8 bg-gray-900/30 relative overflow-hidden group"
-                                data-oid="f0f9_3e"
+                                className="absolute top-0 left-0 w-64 h-64 border-l-2 border-t-2 border-green-500/30 -translate-x-1/2 -translate-y-1/2"
+                                data-oid="2y::db2"
+                            ></div>
+                            <div
+                                className="absolute bottom-0 right-0 w-64 h-64 border-r-2 border-b-2 border-green-500/30 translate-x-1/2 translate-y-1/2"
+                                data-oid="vhy:iwf"
+                            ></div>
+                            <motion.div
+                                className="absolute top-1/4 right-1/4 w-32 h-32 bg-green-500/5 rounded-full blur-3xl"
+                                animate={{
+                                    scale: [1, 1.2, 1],
+                                    opacity: [0.1, 0.2, 0.1],
+                                }}
+                                transition={{
+                                    duration: 8,
+                                    repeat: Infinity,
+                                    ease: 'easeInOut',
+                                }}
+                                data-oid="zeeiu17"
+                            ></motion.div>
+                        </div>
+
+                        <div className="container mx-auto px-6" data-oid="ei5jq6z">
+                            <div className="text-center mb-16" data-oid="8oyw.sn">
+                                <h2
+                                    className="text-3xl md:text-4xl font-bold mb-4 inline-block relative"
+                                    data-oid="qhwp-4z"
+                                >
+                                    <span className="relative z-10" data-oid="ygma3-3">
+                                        How It Works
+                                    </span>
+                                    <div
+                                        className="absolute bottom-0 left-0 w-full h-1 bg-green-500/30"
+                                        data-oid="btt-ogg"
+                                    ></div>
+                                </h2>
+                                <p
+                                    className="text-xl text-gray-400 max-w-2xl mx-auto"
+                                    data-oid="99hkxg4"
+                                >
+                                    A simple game with powerful consequences
+                                </p>
+                            </div>
+
+                            <div
+                                className="grid grid-cols-1 md:grid-cols-12 gap-12"
+                                data-oid="iumyxrp"
                             >
-                                <div
-                                    className="absolute -right-12 -top-12 w-24 h-24 bg-green-500/10 rounded-full group-hover:bg-green-500/20 transition-all duration-500"
-                                    data-oid="kunb4vv"
-                                ></div>
-                                <h3 className="text-2xl font-bold mb-6" data-oid="xrgpphd">
-                                    The game is simple
-                                </h3>
-                                <ul className="space-y-4" data-oid="s.fggmo">
-                                    <li className="flex items-start" data-oid="dldd8rg">
-                                        <span className="text-green-400 mr-3" data-oid="am08y6w">
-                                            01.
-                                        </span>
-                                        <span data-oid="jmui90f">Scan a product's barcode</span>
-                                    </li>
-                                    <li className="flex items-start" data-oid="tp5dt4j">
-                                        <span className="text-green-400 mr-3" data-oid="u5nucoi">
-                                            02.
-                                        </span>
-                                        <span data-oid="j9j-dml">
-                                            Bet on or against label claims
-                                        </span>
-                                    </li>
-                                    <li className="flex items-start" data-oid="g7mgpnk">
-                                        <span className="text-green-400 mr-3" data-oid="mzmftbl">
-                                            03.
-                                        </span>
-                                        <span data-oid="z.u4exx">
-                                            Win when the truth is revealed
-                                        </span>
-                                    </li>
-                                </ul>
+                                <div className="md:col-span-5 md:col-start-2" data-oid="ogm3gqz">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.6 }}
+                                        data-oid="gcootro"
+                                    >
+                                        <h3
+                                            className="text-2xl font-bold mb-6 text-green-400 flex items-center"
+                                            data-oid="k8t_k2_"
+                                        >
+                                            <div
+                                                className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center mr-3"
+                                                data-oid="5wy:iul"
+                                            >
+                                                <span
+                                                    className="text-green-400 text-sm"
+                                                    data-oid="jt4t8kk"
+                                                >
+                                                    →
+                                                </span>
+                                            </div>
+                                            The Concept
+                                        </h3>
+                                        <p
+                                            className="text-lg text-gray-300 mb-6 pl-11"
+                                            data-oid="s.h_:ty"
+                                        >
+                                            Scan any barcode. Create a market. Bet on the truth.
+                                            It's that simple.
+                                        </p>
+                                        <p
+                                            className="text-lg text-gray-300 pl-11"
+                                            data-oid="iiikax9"
+                                        >
+                                            When companies make claims, we turn them into bets. When
+                                            the truth comes out, winners get paid.
+                                        </p>
+                                    </motion.div>
+                                </div>
+                                <div className="md:col-span-5" data-oid="7vcyhlj">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.6, delay: 0.2 }}
+                                        className="border border-gray-800 p-8 bg-gray-900/30 relative overflow-hidden group rounded-sm backdrop-blur-sm"
+                                        whileHover={{
+                                            boxShadow: '0 0 30px rgba(74, 222, 128, 0.1)',
+                                            borderColor: 'rgba(74, 222, 128, 0.3)',
+                                        }}
+                                        data-oid="f0f9_3e"
+                                    >
+                                        <div
+                                            className="absolute -right-12 -top-12 w-32 h-32 bg-green-500/10 rounded-full group-hover:bg-green-500/20 transition-all duration-500"
+                                            data-oid="kunb4vv"
+                                        ></div>
+                                        <h3
+                                            className="text-2xl font-bold mb-8 relative"
+                                            data-oid="xrgpphd"
+                                        >
+                                            <span className="relative z-10" data-oid="r9s2s6:">
+                                                The game is simple
+                                            </span>
+                                            <div
+                                                className="absolute bottom-0 left-0 w-12 h-0.5 bg-green-500"
+                                                data-oid="v.me.7l"
+                                            ></div>
+                                        </h3>
+                                        <ul className="space-y-6" data-oid="s.fggmo">
+                                            <motion.li
+                                                className="flex items-start group/item"
+                                                data-oid="dldd8rg"
+                                                whileHover={{ x: 5 }}
+                                                transition={{ type: 'spring', stiffness: 300 }}
+                                            >
+                                                <span
+                                                    className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-green-500/20 text-green-400 mr-4 group-hover/item:bg-green-500/30 transition-colors duration-300"
+                                                    data-oid="am08y6w"
+                                                >
+                                                    01
+                                                </span>
+                                                <span className="text-lg" data-oid="jmui90f">
+                                                    Scan a product's barcode
+                                                </span>
+                                            </motion.li>
+                                            <motion.li
+                                                className="flex items-start group/item"
+                                                data-oid="tp5dt4j"
+                                                whileHover={{ x: 5 }}
+                                                transition={{ type: 'spring', stiffness: 300 }}
+                                            >
+                                                <span
+                                                    className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-green-500/20 text-green-400 mr-4 group-hover/item:bg-green-500/30 transition-colors duration-300"
+                                                    data-oid="u5nucoi"
+                                                >
+                                                    02
+                                                </span>
+                                                <span className="text-lg" data-oid="j9j-dml">
+                                                    Bet on or against label claims
+                                                </span>
+                                            </motion.li>
+                                            <motion.li
+                                                className="flex items-start group/item"
+                                                data-oid="g7mgpnk"
+                                                whileHover={{ x: 5 }}
+                                                transition={{ type: 'spring', stiffness: 300 }}
+                                            >
+                                                <span
+                                                    className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-green-500/20 text-green-400 mr-4 group-hover/item:bg-green-500/30 transition-colors duration-300"
+                                                    data-oid="mzmftbl"
+                                                >
+                                                    03
+                                                </span>
+                                                <span className="text-lg" data-oid="z.u4exx">
+                                                    Win when the truth is revealed
+                                                </span>
+                                            </motion.li>
+                                        </ul>
+                                    </motion.div>
+                                </div>
                             </div>
                         </div>
                     </section>
