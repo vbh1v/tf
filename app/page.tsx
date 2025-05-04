@@ -61,14 +61,7 @@ export default function Page() {
                         onMouseEnter={() => setIsHovering(true)}
                         onMouseLeave={() => setIsHovering(false)}
                         data-oid="pt31f:d"
-                    >
-                        <div
-                            className="launchlist-widget"
-                            data-key-id="nTWJuR"
-                            data-height="45px"
-                            data-oid="e57-0t4"
-                        ></div>
-                    </div>
+                    ></div>
                 </nav>
 
                 <main className="px-6 md:px-12 lg:px-24 py-16 md:py-24" data-oid="z7r8icl">
@@ -199,14 +192,7 @@ export default function Page() {
                                     onMouseEnter={() => setIsHovering(true)}
                                     onMouseLeave={() => setIsHovering(false)}
                                     data-oid="yi:p39:"
-                                >
-                                    <div
-                                        className="launchlist-widget"
-                                        data-key-id="nTWJuR"
-                                        data-height="180px"
-                                        data-oid="y4sgkdv"
-                                    ></div>
-                                </div>
+                                ></div>
                             </div>
 
                             {/* Images moved to background */}
