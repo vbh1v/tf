@@ -86,7 +86,7 @@ export default function Page() {
                                 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
                                 data-oid="ffy889a"
                             >
-                                Scan. Trade. <br data-oid="fl1fuj:" />
+                                Scan. Bet. <br data-oid="fl1fuj:" />
                                 <span className="text-purple-400" data-oid="77b8_.a">
                                     Expose the Truth.
                                 </span>
