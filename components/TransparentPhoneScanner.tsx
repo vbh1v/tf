@@ -23,7 +23,7 @@ const TransparentPhoneScanner = () => {
                 {/* Phone Device */}
                 <div className="relative" data-oid="3u2fuc1" key="olk-X_C5">
                     <div
-                        className="border-2 border-green-400/50 rounded-[40px] relative flex flex-col items-center p-4 bg-gray-900/30 backdrop-blur-sm h-[590px] w-[351px]"
+                        className="border-2 border-green-400/50 rounded-[40px] relative flex flex-col items-center p-4 bg-gray-900/30 backdrop-blur-sm h-[590px] w-[290px] sm:w-[320px] md:w-[351px] transform scale-[0.85] sm:scale-90 md:scale-100"
                         data-oid="3grp.89"
                     >
                         {/* Dynamic Island */}
@@ -145,7 +145,6 @@ const TransparentPhoneScanner = () => {
                                 y: 0,
                                 transition: { delay: 0.3 },
                             }}
-                            onClick={() => alert('Market launched!')}
                             data-oid="launch-market-btn"
                             key="olk-kdNc"
                         >

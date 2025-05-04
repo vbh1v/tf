@@ -69,7 +69,7 @@ export default function Page() {
                         </span>
                     </div>
                     <button
-                        className="px-4 py-2 border border-green-500 text-green-400 hover:bg-green-500/10 transition-all duration-300 rounded-none"
+                        className="hidden sm:block px-4 py-2 border border-green-500 text-green-400 hover:bg-green-500/10 transition-all duration-300 rounded-none"
                         onMouseEnter={() => setIsHovering(true)}
                         onMouseLeave={() => setIsHovering(false)}
                         data-oid="pt31f:d"
@@ -182,7 +182,7 @@ export default function Page() {
                                 />
                             </motion.div>
                         </div>
-                        <div className="md:col-span-6 md:col-start-2" data-oid="qqj5hmw">
+                        <div className="md:col-span-6 md:col-start-2 px-2" data-oid="qqj5hmw">
                             <h1
                                 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
                                 data-oid="rr81c0k"
@@ -203,7 +203,7 @@ export default function Page() {
                             <div className="mb-12" data-oid="4:lh-qr" key="olk-zy7S">
                                 <form
                                     onSubmit={handleSubmit}
-                                    className="flex flex-col sm:flex-row gap-4 max-w-md"
+                                    className="flex flex-col sm:flex-row gap-4 max-w-full sm:max-w-md"
                                     data-oid="yi:p39:"
                                 >
                                     <input
@@ -232,7 +232,7 @@ export default function Page() {
                         </div>
 
                         <div
-                            className="md:col-span-4 flex items-center justify-center"
+                            className="md:col-span-4 flex items-center justify-center mt-8 md:mt-0"
                             data-oid="uh-ws_5"
                         >
                             <div
@@ -350,7 +350,7 @@ export default function Page() {
                             </h2>
                             <form
                                 onSubmit={handleSubmit}
-                                className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto"
+                                className="flex flex-col sm:flex-row justify-center gap-4 max-w-full sm:max-w-md mx-auto px-4 sm:px-0"
                                 data-oid="hmhlukd"
                             >
                                 <input
