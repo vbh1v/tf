@@ -205,41 +205,6 @@ export default function Page() {
                         </div>
                     </section>
 
-                    {/* Testimonials/Quips */}
-                    <section className="mb-32" data-oid="iwr:nnc">
-                        <div
-                            className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"
-                            data-oid="6wl4wp:"
-                        >
-                            <div className="border-t border-gray-800 pt-6" data-oid="o:velvu">
-                                <p className="text-lg mb-4" data-oid="m:0dk9m">
-                                    "Finally, a way to call BS on 'all-natural' claims without a law
-                                    degree."
-                                </p>
-                                <p className="text-sm text-gray-500" data-oid="gf0yl9c">
-                                    — Skeptical shopper
-                                </p>
-                            </div>
-                            <div className="border-t border-gray-800 pt-6" data-oid="zu2ex3p">
-                                <p className="text-lg mb-4" data-oid="txb8s2s">
-                                    "Made $200 betting against 'sustainably sourced' palm oil. Truth
-                                    pays."
-                                </p>
-                                <p className="text-sm text-gray-500" data-oid="qq0pw_l">
-                                    — Environmental activist
-                                </p>
-                            </div>
-                            <div className="border-t border-gray-800 pt-6" data-oid="x4m.e-c">
-                                <p className="text-lg mb-4" data-oid="b7waehk">
-                                    "Our marketing team is terrified of this app. Good."
-                                </p>
-                                <p className="text-sm text-gray-500" data-oid="0t.ms0m">
-                                    — Anonymous CPG executive
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
                     {/* Social Element */}
                     <section className="mb-32 relative" data-oid=".a7m52:">
                         <div
@@ -308,7 +273,7 @@ export default function Page() {
                                 taste.fun
                             </span>
                             <span className="ml-2 text-xs text-green-400" data-oid=":pcln-g">
-                                © 2023
+                                © 2025
                             </span>
                         </div>
                         <div className="text-gray-500 text-sm" data-oid="my0j5:v">
