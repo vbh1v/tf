@@ -39,7 +39,7 @@ export default function Page() {
 
             {/* Interactive cursor effect */}
             <div
-                className="pointer-events-none fixed w-64 h-64 rounded-full bg-purple-500/10 blur-3xl z-0 transition-all duration-300 ease-out"
+                className="pointer-events-none fixed w-64 h-64 rounded-full bg-green-500/10 blur-3xl z-0 transition-all duration-300 ease-out"
                 style={{
                     left: `${cursorPos.x - 128}px`,
                     top: `${cursorPos.y - 128}px`,
@@ -59,14 +59,14 @@ export default function Page() {
                             taste.fun
                         </span>
                         <span
-                            className="ml-2 text-xs text-purple-400 uppercase tracking-widest"
+                            className="ml-2 text-xs text-green-400 uppercase tracking-widest"
                             data-oid=":kh3m9r"
                         >
                             beta
                         </span>
                     </div>
                     <button
-                        className="px-4 py-2 border border-purple-500 text-purple-400 hover:bg-purple-500/10 transition-all duration-300 rounded-none"
+                        className="px-4 py-2 border border-green-500 text-green-400 hover:bg-green-500/10 transition-all duration-300 rounded-none"
                         onMouseEnter={() => setIsHovering(true)}
                         onMouseLeave={() => setIsHovering(false)}
                         data-oid="_mjcs.g"
@@ -87,7 +87,7 @@ export default function Page() {
                                 data-oid="ffy889a"
                             >
                                 Scan. Bet. <br data-oid="fl1fuj:" />
-                                <span className="text-purple-400" data-oid="77b8_.a">
+                                <span className="text-green-400" data-oid="77b8_.a">
                                     Expose the Truth.
                                 </span>
                             </h1>
@@ -108,14 +108,14 @@ export default function Page() {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         placeholder="your@email.com"
-                                        className="bg-gray-900/50 border border-gray-700 px-4 py-3 focus:outline-none focus:border-purple-500 flex-grow"
+                                        className="bg-gray-900/50 border border-gray-700 px-4 py-3 focus:outline-none focus:border-green-500 flex-grow"
                                         required
                                         data-oid="sr66k1a"
                                     />
 
                                     <button
                                         type="submit"
-                                        className="px-6 py-3 bg-purple-600 hover:bg-purple-700 transition-colors duration-300 text-white font-medium"
+                                        className="px-6 py-3 bg-green-600 hover:bg-green-700 transition-colors duration-300 text-white font-medium"
                                         onMouseEnter={() => setIsHovering(true)}
                                         onMouseLeave={() => setIsHovering(false)}
                                         data-oid="a8_27bd"
@@ -130,7 +130,7 @@ export default function Page() {
                     {/* Mission Statement */}
                     <section className="mb-32 relative" data-oid="ohzlinc">
                         <div
-                            className="absolute -left-24 top-0 w-16 h-16 border-t border-l border-purple-500/30"
+                            className="absolute -left-24 top-0 w-16 h-16 border-t border-l border-green-500/30"
                             data-oid="daw300g"
                         ></div>
                         <div className="max-w-4xl mx-auto" data-oid="_r.al9l">
@@ -151,7 +151,7 @@ export default function Page() {
                     >
                         <div className="md:col-span-5 md:col-start-2" data-oid="f_0.8w2">
                             <h3
-                                className="text-2xl font-bold mb-6 text-purple-400"
+                                className="text-2xl font-bold mb-6 text-green-400"
                                 data-oid="ijnozhf"
                             >
                                 How it works
@@ -171,7 +171,7 @@ export default function Page() {
                                 data-oid="ni74oeq"
                             >
                                 <div
-                                    className="absolute -right-12 -top-12 w-24 h-24 bg-purple-500/10 rounded-full group-hover:bg-purple-500/20 transition-all duration-500"
+                                    className="absolute -right-12 -top-12 w-24 h-24 bg-green-500/10 rounded-full group-hover:bg-green-500/20 transition-all duration-500"
                                     data-oid="calj0k:"
                                 ></div>
                                 <h3 className="text-2xl font-bold mb-6" data-oid="hs8kv56">
@@ -179,13 +179,13 @@ export default function Page() {
                                 </h3>
                                 <ul className="space-y-4" data-oid="ri9_g2l">
                                     <li className="flex items-start" data-oid="mf7tc6p">
-                                        <span className="text-purple-400 mr-3" data-oid="lo1cvv2">
+                                        <span className="text-green-400 mr-3" data-oid="lo1cvv2">
                                             01.
                                         </span>
                                         <span data-oid=".6920kb">Scan a product's barcode</span>
                                     </li>
                                     <li className="flex items-start" data-oid="ik28huh">
-                                        <span className="text-purple-400 mr-3" data-oid="vicj3sh">
+                                        <span className="text-green-400 mr-3" data-oid="vicj3sh">
                                             02.
                                         </span>
                                         <span data-oid="3jpg5eu">
@@ -193,7 +193,7 @@ export default function Page() {
                                         </span>
                                     </li>
                                     <li className="flex items-start" data-oid="ujq0jav">
-                                        <span className="text-purple-400 mr-3" data-oid="d4r9uzd">
+                                        <span className="text-green-400 mr-3" data-oid="d4r9uzd">
                                             03.
                                         </span>
                                         <span data-oid="6bntmbx">
@@ -243,7 +243,7 @@ export default function Page() {
                     {/* Social Element */}
                     <section className="mb-32 relative" data-oid=".a7m52:">
                         <div
-                            className="absolute -right-24 top-1/2 w-16 h-16 border-b border-r border-purple-500/30"
+                            className="absolute -right-24 top-1/2 w-16 h-16 border-b border-r border-green-500/30"
                             data-oid="wn94thx"
                         ></div>
                         <div className="max-w-3xl mx-auto text-center" data-oid="49s3a8i">
@@ -276,14 +276,14 @@ export default function Page() {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     placeholder="your@email.com"
-                                    className="bg-gray-900/50 border border-gray-700 px-4 py-3 focus:outline-none focus:border-purple-500 flex-grow"
+                                    className="bg-gray-900/50 border border-gray-700 px-4 py-3 focus:outline-none focus:border-green-500 flex-grow"
                                     required
                                     data-oid="qd0uueq"
                                 />
 
                                 <button
                                     type="submit"
-                                    className="px-6 py-3 bg-purple-600 hover:bg-purple-700 transition-colors duration-300 text-white font-medium"
+                                    className="px-6 py-3 bg-green-600 hover:bg-green-700 transition-colors duration-300 text-white font-medium"
                                     onMouseEnter={() => setIsHovering(true)}
                                     onMouseLeave={() => setIsHovering(false)}
                                     data-oid="xuoupr6"
@@ -307,7 +307,7 @@ export default function Page() {
                             <span className="text-xl font-bold tracking-tighter" data-oid="6.3ugqt">
                                 taste.fun
                             </span>
-                            <span className="ml-2 text-xs text-purple-400" data-oid=":pcln-g">
+                            <span className="ml-2 text-xs text-green-400" data-oid=":pcln-g">
                                 © 2023
                             </span>
                         </div>
