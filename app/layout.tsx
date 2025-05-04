@@ -3,7 +3,7 @@ import './globals.css';
 export const metadata: Metadata = {
     title: 'Taste.fun',
     description: '',
-    metadataBase: new URL('#'),
+    metadataBase: new URL('tf-git-main-vaibhavvsharmas-projects.vercel.app'),
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
