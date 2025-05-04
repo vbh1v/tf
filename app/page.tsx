@@ -105,11 +105,81 @@ export default function Page() {
                                 }}
                                 data-oid=".tc5:6o"
                             >
-                                {/* Chips bag */}
+                                {/* Product images floating in background */}
 
-                                {/* Protein bar */}
+                                <motion.img
+                                    className="absolute opacity-40 w-[149px] h-[262px]"
+                                    src="/images/E3A69F0C-BC02-4430-A0EA-BF7566F61877.PNG"
+                                    alt="Product 3"
+                                    style={{ bottom: '15%', left: '25%' }}
+                                    animate={{
+                                        y: [0, 15, 0],
+                                        rotate: [0, 8, 0],
+                                        transition: {
+                                            y: {
+                                                duration: 9,
+                                                repeat: Infinity,
+                                                repeatType: 'reverse',
+                                            },
+                                            rotate: {
+                                                duration: 11,
+                                                repeat: Infinity,
+                                                repeatType: 'reverse',
+                                            },
+                                        },
+                                    }}
+                                    data-oid="y47e457"
+                                    key="olk--WcI"
+                                />
 
-                                {/* Beverage can */}
+                                <motion.img
+                                    className="absolute opacity-30 w-[359px] h-[521px]"
+                                    src="/images/7C25F01E-8DA3-447B-847B-08DDB06DAEF4.PNG"
+                                    alt="Product 2"
+                                    style={{ top: '30%', right: '5%' }}
+                                    animate={{
+                                        y: [0, 30, 0],
+                                        rotate: [0, -3, 0],
+                                        transition: {
+                                            y: {
+                                                duration: 12,
+                                                repeat: Infinity,
+                                                repeatType: 'reverse',
+                                            },
+                                            rotate: {
+                                                duration: 15,
+                                                repeat: Infinity,
+                                                repeatType: 'reverse',
+                                            },
+                                        },
+                                    }}
+                                    data-oid="l:be9_b"
+                                />
+
+                                <motion.img
+                                    className="absolute opacity-40 h-[121px] w-[203px]"
+                                    src="/images/BCAC8BC8-6BF1-4971-89A4-3F559F979759.PNG"
+                                    alt="Product 1"
+                                    style={{ top: '10%', left: '15%' }}
+                                    animate={{
+                                        y: [0, -20, 0],
+                                        rotate: [0, 5, 0],
+                                        transition: {
+                                            y: {
+                                                duration: 8,
+                                                repeat: Infinity,
+                                                repeatType: 'reverse',
+                                            },
+                                            rotate: {
+                                                duration: 10,
+                                                repeat: Infinity,
+                                                repeatType: 'reverse',
+                                            },
+                                        },
+                                    }}
+                                    data-oid="n5r17hg"
+                                    key="olk-oSMz"
+                                />
                             </motion.div>
                         </div>
                         <div className="md:col-span-6 md:col-start-2" data-oid="qqj5hmw">
@@ -158,29 +228,7 @@ export default function Page() {
                                 </form>
                             </div>
 
-                            <img
-                                className="w-[100px] h-[100px]"
-                                data-oid="b8dcp88"
-                                src="/images/BCAC8BC8-6BF1-4971-89A4-3F559F979759.PNG"
-                                alt="BCAC8BC8-6BF1-4971-89A4-3F559F979759.PNG"
-                                key="olk-ixpM"
-                            />
-
-                            <img
-                                className="w-[373px] h-[358px]"
-                                data-oid="kv3gklj"
-                                src="/images/7C25F01E-8DA3-447B-847B-08DDB06DAEF4.PNG"
-                                alt="7C25F01E-8DA3-447B-847B-08DDB06DAEF4.PNG"
-                                key="olk-23bY"
-                            />
-
-                            <img
-                                className="w-[100px] h-[100px]"
-                                data-oid="f31oh0u"
-                                src="/images/E3A69F0C-BC02-4430-A0EA-BF7566F61877.PNG"
-                                alt="E3A69F0C-BC02-4430-A0EA-BF7566F61877.PNG"
-                                key="olk-pbWl"
-                            />
+                            {/* Images moved to background */}
                         </div>
 
                         <div
