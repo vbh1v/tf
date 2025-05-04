@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import TransparentPhoneScanner from '@/components/TransparentPhoneScanner';
 
 export default function Page() {
@@ -79,9 +81,120 @@ export default function Page() {
                 <main className="px-6 md:px-12 lg:px-24 py-16 md:py-24" data-oid="z7r8icl">
                     {/* Hero Section */}
                     <section
-                        className="mb-32 grid grid-cols-1 md:grid-cols-12 gap-8"
+                        className="mb-32 grid grid-cols-1 md:grid-cols-12 gap-8 relative"
                         data-oid="j:1svtl"
                     >
+                        {/* Background product images */}
+                        <div
+                            className="absolute inset-0 overflow-hidden pointer-events-none"
+                            style={{ zIndex: -1 }}
+                            data-oid="mlrdqr2"
+                        >
+                            <motion.div
+                                className="absolute w-full h-full"
+                                animate={{
+                                    x: [-200, 0, -200],
+                                    transition: {
+                                        x: {
+                                            duration: 40,
+                                            repeat: Infinity,
+                                            repeatType: 'loop',
+                                            ease: 'linear',
+                                        },
+                                    },
+                                }}
+                                data-oid=".tc5:6o"
+                            >
+                                {/* Chips bag */}
+                                <motion.div
+                                    className="absolute"
+                                    style={{
+                                        top: '10%',
+                                        right: '5%',
+                                        opacity: 0.15,
+                                    }}
+                                    animate={{
+                                        rotate: [-3, 3, -3],
+                                        y: [0, -15, 0],
+                                        transition: {
+                                            duration: 10,
+                                            repeat: Infinity,
+                                            repeatType: 'reverse',
+                                        },
+                                    }}
+                                    data-oid="ytbebp6"
+                                >
+                                    <Image
+                                        src="https://i.imgur.com/Ql4jRTk.png"
+                                        alt="BAYZ Chips"
+                                        width={250}
+                                        height={350}
+                                        className="object-contain"
+                                        data-oid="igf.uov"
+                                    />
+                                </motion.div>
+
+                                {/* Protein bar */}
+                                <motion.div
+                                    className="absolute"
+                                    style={{
+                                        bottom: '15%',
+                                        left: '5%',
+                                        opacity: 0.15,
+                                    }}
+                                    animate={{
+                                        rotate: [2, -2, 2],
+                                        y: [0, 10, 0],
+                                        transition: {
+                                            duration: 8,
+                                            repeat: Infinity,
+                                            repeatType: 'reverse',
+                                            delay: 1,
+                                        },
+                                    }}
+                                    data-oid="rvfe452"
+                                >
+                                    <Image
+                                        src="https://i.imgur.com/Ql4jRTk.png"
+                                        alt="Protein Bar"
+                                        width={300}
+                                        height={150}
+                                        className="object-contain"
+                                        data-oid="_9kz3ro"
+                                    />
+                                </motion.div>
+
+                                {/* Beverage can */}
+                                <motion.div
+                                    className="absolute"
+                                    style={{
+                                        top: '40%',
+                                        right: '25%',
+                                        opacity: 0.15,
+                                    }}
+                                    animate={{
+                                        rotate: [-1, 1, -1],
+                                        y: [0, -8, 0],
+                                        transition: {
+                                            duration: 7,
+                                            repeat: Infinity,
+                                            repeatType: 'reverse',
+                                            delay: 2,
+                                        },
+                                    }}
+                                    data-oid="24rfi6i"
+                                >
+                                    <Image
+                                        src="https://i.imgur.com/Ql4jRTk.png"
+                                        alt="STOIC Beverage"
+                                        width={180}
+                                        height={280}
+                                        className="object-contain"
+                                        data-oid="rhv:2pb"
+                                    />
+                                </motion.div>
+                            </motion.div>
+                        </div>
                         <div className="md:col-span-6 md:col-start-2" data-oid="qqj5hmw">
                             <h1
                                 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
