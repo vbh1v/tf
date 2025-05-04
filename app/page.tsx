@@ -8,9 +8,6 @@ import TransparentPhoneScanner from '@/components/TransparentPhoneScanner';
 export default function Page() {
     const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
     const [isHovering, setIsHovering] = useState(false);
-    const [email, setEmail] = useState('');
-    const [submitted, setSubmitted] = useState(false);
-
     useEffect(() => {
         const handleMouseMove = (e) => {
             setCursorPos({ x: e.clientX, y: e.clientY });
@@ -19,15 +16,6 @@ export default function Page() {
         window.addEventListener('mousemove', handleMouseMove);
         return () => window.removeEventListener('mousemove', handleMouseMove);
     }, []);
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (email) {
-            setSubmitted(true);
-            setEmail('');
-            setTimeout(() => setSubmitted(false), 3000);
-        }
-    };
 
     return (
         <div
@@ -68,14 +56,19 @@ export default function Page() {
                             beta
                         </span>
                     </div>
-                    <button
-                        className="hidden sm:block px-4 py-2 border border-green-500 text-green-400 hover:bg-green-500/10 transition-all duration-300 rounded-none"
+                    <div
+                        className="hidden sm:block"
                         onMouseEnter={() => setIsHovering(true)}
                         onMouseLeave={() => setIsHovering(false)}
                         data-oid="pt31f:d"
                     >
-                        Join Waitlist
-                    </button>
+                        <div
+                            className="launchlist-widget"
+                            data-key-id="nTWJuR"
+                            data-height="45px"
+                            data-oid="e57-0t4"
+                        ></div>
+                    </div>
                 </nav>
 
                 <main className="px-6 md:px-12 lg:px-24 py-16 md:py-24" data-oid="z7r8icl">
@@ -201,31 +194,19 @@ export default function Page() {
                                 The label speaks. We verify.
                             </p>
                             <div className="mb-12" data-oid="4:lh-qr" key="olk-zy7S">
-                                <form
-                                    onSubmit={handleSubmit}
-                                    className="flex flex-col sm:flex-row gap-4 max-w-full sm:max-w-md"
+                                <div
+                                    className="max-w-full sm:max-w-md"
+                                    onMouseEnter={() => setIsHovering(true)}
+                                    onMouseLeave={() => setIsHovering(false)}
                                     data-oid="yi:p39:"
                                 >
-                                    <input
-                                        type="email"
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        placeholder="your@email.com"
-                                        className="bg-gray-900/50 border border-gray-700 px-4 py-3 focus:outline-none focus:border-green-500 flex-grow"
-                                        required
-                                        data-oid="qsi9sgs"
-                                    />
-
-                                    <button
-                                        type="submit"
-                                        className="px-6 py-3 bg-green-600 hover:bg-green-700 transition-colors duration-300 text-white font-medium"
-                                        onMouseEnter={() => setIsHovering(true)}
-                                        onMouseLeave={() => setIsHovering(false)}
-                                        data-oid="kzwy49."
-                                    >
-                                        {submitted ? "You're In" : 'Join Waitlist'}
-                                    </button>
-                                </form>
+                                    <div
+                                        className="launchlist-widget"
+                                        data-key-id="nTWJuR"
+                                        data-height="180px"
+                                        data-oid="y4sgkdv"
+                                    ></div>
+                                </div>
                             </div>
 
                             {/* Images moved to background */}
@@ -348,31 +329,19 @@ export default function Page() {
                             <h2 className="text-3xl md:text-5xl font-bold mb-8" data-oid="byhu10w">
                                 Ready to play with truth?
                             </h2>
-                            <form
-                                onSubmit={handleSubmit}
-                                className="flex flex-col sm:flex-row justify-center gap-4 max-w-full sm:max-w-md mx-auto px-4 sm:px-0"
+                            <div
+                                className="max-w-full sm:max-w-md mx-auto px-4 sm:px-0"
+                                onMouseEnter={() => setIsHovering(true)}
+                                onMouseLeave={() => setIsHovering(false)}
                                 data-oid="hmhlukd"
                             >
-                                <input
-                                    type="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="your@email.com"
-                                    className="bg-gray-900/50 border border-gray-700 px-4 py-3 focus:outline-none focus:border-green-500 flex-grow"
-                                    required
-                                    data-oid="oiaq1iu"
-                                />
-
-                                <button
-                                    type="submit"
-                                    className="px-6 py-3 bg-green-600 hover:bg-green-700 transition-colors duration-300 text-white font-medium"
-                                    onMouseEnter={() => setIsHovering(true)}
-                                    onMouseLeave={() => setIsHovering(false)}
-                                    data-oid="wo8tdhm"
-                                >
-                                    {submitted ? "You're In" : 'Join Waitlist'}
-                                </button>
-                            </form>
+                                <div
+                                    className="launchlist-widget"
+                                    data-key-id="nTWJuR"
+                                    data-height="180px"
+                                    data-oid="veh.:08"
+                                ></div>
+                            </div>
                         </div>
                     </section>
                 </main>
