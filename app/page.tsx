@@ -158,29 +158,7 @@ export default function Page() {
                                 </form>
                             </div>
 
-                            <img
-                                className="w-[100px] h-[100px]"
-                                data-oid="b8dcp88"
-                                src="/images/BCAC8BC8-6BF1-4971-89A4-3F559F979759.PNG"
-                                alt="BCAC8BC8-6BF1-4971-89A4-3F559F979759.PNG"
-                                key="olk-ixpM"
-                            />
-
-                            <img
-                                className="w-[373px] h-[358px]"
-                                data-oid="kv3gklj"
-                                src="/images/7C25F01E-8DA3-447B-847B-08DDB06DAEF4.PNG"
-                                alt="7C25F01E-8DA3-447B-847B-08DDB06DAEF4.PNG"
-                                key="olk-23bY"
-                            />
-
-                            <img
-                                className="w-[100px] h-[100px]"
-                                data-oid="f31oh0u"
-                                src="/images/E3A69F0C-BC02-4430-A0EA-BF7566F61877.PNG"
-                                alt="E3A69F0C-BC02-4430-A0EA-BF7566F61877.PNG"
-                                key="olk-pbWl"
-                            />
+                            {/* Product images removed from here - now displayed in the ProductMarquee component */}
                         </div>
 
                         <div
@@ -188,7 +166,7 @@ export default function Page() {
                             data-oid="uh-ws_5"
                         >
                             <div
-                                className="transform hover:scale-105 transition-transform duration-500 hover:rotate-1"
+                                className="transform hover:scale-105 transition-transform duration-500 hover:rotate-1 relative"
                                 data-oid="1k0ikp_"
                             >
                                 <TransparentPhoneScanner data-oid=":1qvc9m" />

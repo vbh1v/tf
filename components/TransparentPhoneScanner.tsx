@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ProductMarquee from './ProductMarquee';
 
 const TransparentPhoneScanner = () => {
     const [isScanning, setIsScanning] = useState(false);
@@ -19,11 +20,15 @@ const TransparentPhoneScanner = () => {
         <div className="w-full max-w-3xl mx-auto my-12 relative" data-oid="bb-91nd">
             <div className="flex items-center justify-center" data-oid="__kt:p1" key="olk-oeca">
                 {/* Product Items - Behind the phone */}
+                <div className="absolute inset-0 z-0 overflow-hidden" data-oid="gog3p9_">
+                    <ProductMarquee direction="left" speed={30} data-oid=":2r92yk" />
+                    <ProductMarquee direction="right" speed={40} data-oid="1o0at:4" />
+                </div>
 
                 {/* Phone Device */}
-                <div className="relative" data-oid="3u2fuc1" key="olk-X_C5">
+                <div className="relative z-10" data-oid="3u2fuc1" key="olk-X_C5">
                     <div
-                        className="border-2 border-green-400/50 rounded-[40px] relative flex flex-col items-center p-4 bg-gray-900/30 backdrop-blur-sm h-[590px] w-[351px]"
+                        className="border-2 border-green-400/50 rounded-[40px] relative flex flex-col items-center p-4 bg-transparent h-[590px] w-[351px]"
                         data-oid="3grp.89"
                     >
                         {/* Dynamic Island */}
@@ -68,7 +73,7 @@ const TransparentPhoneScanner = () => {
 
                         {/* Scanner in the middle */}
                         <div
-                            className="border border-green-400/40 rounded-lg flex flex-col items-center justify-center relative overflow-hidden h-[85px] w-[179px] mt-[160px] mb-[160px]"
+                            className="border border-green-400/40 rounded-lg flex flex-col items-center justify-center relative overflow-hidden h-[85px] w-[179px] mt-[160px] mb-[160px] bg-transparent"
                             data-oid="u8b63vk"
                             key="olk-Qpea"
                         >
