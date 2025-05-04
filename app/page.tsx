@@ -157,6 +157,13 @@ export default function Page() {
                                     </button>
                                 </form>
                             </div>
+                            <img
+                                className="w-[373px] h-[358px]"
+                                data-oid="kv3gklj"
+                                src="/images/7C25F01E-8DA3-447B-847B-08DDB06DAEF4.PNG"
+                                alt="7C25F01E-8DA3-447B-847B-08DDB06DAEF4.PNG"
+                                key="olk-23bY"
+                            />
                         </div>
 
                         <div

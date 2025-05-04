@@ -158,12 +158,6 @@ const TransparentPhoneScanner = () => {
             </div>
 
             {/* Glow Effects */}
-
-            <div
-                className="absolute -z-10 w-32 h-32 bg-green-500/10 rounded-full blur-2xl top-1/3 left-1/3"
-                data-oid="for.are"
-                key="olk-0wep"
-            ></div>
         </div>
     );
 };
