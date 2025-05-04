@@ -3,7 +3,7 @@ import './globals.css';
 export const metadata: Metadata = {
     title: 'Taste.fun',
     description: '',
-    metadataBase: new URL('https://sco-r1jk6fmzcvpwazd-e.onlook.live/'),
+    metadataBase: new URL('#'),
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (

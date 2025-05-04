@@ -333,7 +333,7 @@ export default function Page() {
                                             data-oid="s.h_:ty"
                                         >
                                             Scan any barcode. Create a market. Bet on the truth.
-                                            It's that simple.
+                                            It&apos;s that simple.
                                         </p>
                                         <p
                                             className="text-lg text-gray-300 pl-11"
@@ -387,7 +387,7 @@ export default function Page() {
                                                     01
                                                 </span>
                                                 <span className="text-lg" data-oid="jmui90f">
-                                                    Scan a product's barcode
+                                                    Scan a product&apos;s barcode
                                                 </span>
                                             </motion.li>
                                             <motion.li
@@ -430,22 +430,183 @@ export default function Page() {
                     </section>
 
                     {/* Social Element */}
-                    <section className="mb-32 relative" data-oid="dpb2pt1">
+                    <section className="mb-32 relative py-20" data-oid="dpb2pt1">
+                        {/* Background decorative elements */}
                         <div
-                            className="absolute -right-24 top-1/2 w-16 h-16 border-b border-r border-green-500/30"
-                            data-oid="xtdyn.5"
-                        ></div>
-                        <div className="max-w-3xl mx-auto text-center" data-oid="q78wq4.">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-8" data-oid="urn54u2">
-                                It's not just verification. It's a movement.
-                            </h2>
-                            <p className="text-xl text-gray-300 mb-6" data-oid="bi5.09b">
-                                Share your wins. Expose corporate lies. Build a reputation as a
-                                truth-seeker.
-                            </p>
-                            <p className="text-xl text-gray-300" data-oid="2bqfg_2">
-                                The more we play, the more companies have to tell the truth.
-                            </p>
+                            className="absolute inset-0 overflow-hidden pointer-events-none"
+                            data-oid="jow4c8z"
+                        >
+                            <motion.div
+                                className="absolute top-1/3 left-1/4 w-64 h-64 bg-green-500/5 rounded-full blur-[100px]"
+                                animate={{
+                                    scale: [1, 1.2, 1],
+                                    opacity: [0.1, 0.15, 0.1],
+                                }}
+                                transition={{
+                                    duration: 10,
+                                    repeat: Infinity,
+                                    ease: 'easeInOut',
+                                }}
+                                data-oid="8o1xulc"
+                            ></motion.div>
+                            <motion.div
+                                className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-green-500/5 rounded-full blur-[100px]"
+                                animate={{
+                                    scale: [1.2, 1, 1.2],
+                                    opacity: [0.15, 0.1, 0.15],
+                                }}
+                                transition={{
+                                    duration: 10,
+                                    repeat: Infinity,
+                                    ease: 'easeInOut',
+                                    delay: 5,
+                                }}
+                                data-oid="n4kku:8"
+                            ></motion.div>
+                            <div
+                                className="absolute -right-24 top-1/2 w-16 h-16 border-b border-r border-green-500/30"
+                                data-oid="xtdyn.5"
+                            ></div>
+                        </div>
+
+                        <div className="container mx-auto px-6" data-oid="0nd8-6v">
+                            <motion.div
+                                className="max-w-3xl mx-auto text-center relative z-10 backdrop-blur-sm py-10 px-6"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8 }}
+                                data-oid="q78wq4."
+                            >
+                                <div
+                                    className="mb-2 text-green-400 font-medium tracking-wider text-sm uppercase"
+                                    data-oid="7h:2utq"
+                                >
+                                    The Vision
+                                </div>
+                                <h2
+                                    className="text-3xl md:text-5xl font-bold mb-10 leading-tight relative inline-block"
+                                    data-oid="urn54u2"
+                                >
+                                    <span className="relative" data-oid="a-h8e6k">
+                                        It&apos;s not just verification.
+                                        <br className="hidden md:block" data-oid="p-js8jw" />
+                                        It&apos;s a{' '}
+                                        <span className="text-green-400" data-oid="-69w9u9">
+                                            movement
+                                        </span>
+                                        .
+                                        <div
+                                            className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-green-500/30"
+                                            data-oid="k5tgpw9"
+                                        ></div>
+                                    </span>
+                                </h2>
+
+                                <div className="grid md:grid-cols-3 gap-8 mt-12" data-oid="994ekge">
+                                    <motion.div
+                                        className="text-center"
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.5, delay: 0.2 }}
+                                        data-oid="40bdzgn"
+                                    >
+                                        <div
+                                            className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-500/10 flex items-center justify-center"
+                                            data-oid="tar6gft"
+                                        >
+                                            <span
+                                                className="text-green-400 text-xl"
+                                                data-oid="vy16ra8"
+                                            >
+                                                ↗
+                                            </span>
+                                        </div>
+                                        <h3 className="text-xl font-bold mb-3" data-oid="dalq7.s">
+                                            Share Your Wins
+                                        </h3>
+                                        <p
+                                            className="text-gray-300 leading-relaxed"
+                                            data-oid="lxtsq6k"
+                                        >
+                                            Celebrate victories when your predictions are proven
+                                            right.
+                                        </p>
+                                    </motion.div>
+
+                                    <motion.div
+                                        className="text-center"
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.5, delay: 0.4 }}
+                                        data-oid="bgmg7iv"
+                                    >
+                                        <div
+                                            className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-500/10 flex items-center justify-center"
+                                            data-oid="s:d3z_q"
+                                        >
+                                            <span
+                                                className="text-green-400 text-xl"
+                                                data-oid="t_dx.-6"
+                                            >
+                                                ⚠
+                                            </span>
+                                        </div>
+                                        <h3 className="text-xl font-bold mb-3" data-oid="pp.rpv1">
+                                            Expose Lies
+                                        </h3>
+                                        <p
+                                            className="text-gray-300 leading-relaxed"
+                                            data-oid="mb77axx"
+                                        >
+                                            Bring corporate misinformation into the light.
+                                        </p>
+                                    </motion.div>
+
+                                    <motion.div
+                                        className="text-center"
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.5, delay: 0.6 }}
+                                        data-oid="-uh71o6"
+                                    >
+                                        <div
+                                            className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-500/10 flex items-center justify-center"
+                                            data-oid="5-p6:z-"
+                                        >
+                                            <span
+                                                className="text-green-400 text-xl"
+                                                data-oid="bnd7ey_"
+                                            >
+                                                ★
+                                            </span>
+                                        </div>
+                                        <h3 className="text-xl font-bold mb-3" data-oid="cl:a9np">
+                                            Build Reputation
+                                        </h3>
+                                        <p
+                                            className="text-gray-300 leading-relaxed"
+                                            data-oid="7q59ido"
+                                        >
+                                            Become known as a trusted truth-seeker.
+                                        </p>
+                                    </motion.div>
+                                </div>
+
+                                <motion.p
+                                    className="text-xl text-gray-300 mt-12 max-w-2xl mx-auto font-medium leading-relaxed"
+                                    data-oid="2bqfg_2"
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.8, delay: 0.8 }}
+                                >
+                                    The more we play, the more companies have to tell the truth.
+                                </motion.p>
+                            </motion.div>
                         </div>
                     </section>
 
@@ -503,7 +664,7 @@ export default function Page() {
                         <div className="text-gray-500 text-sm" data-oid="kvedl2.">
                             Not affiliated with any food corporation.{' '}
                             <br className="md:hidden" data-oid="m:wk594" />
-                            That's kind of the point.
+                            That&apos;s kind of the point.
                         </div>
                     </div>
                 </footer>
