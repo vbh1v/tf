@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Script from 'next/script';
 export const metadata: Metadata = {
     title: 'taste.fun - Scan. Bet. Expose the Truth.',
     description: 'The label speaks. We verify.',
@@ -16,6 +17,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </head>
             <body className="" data-oid="_w3-7nx">
                 {children}
+
+                <Script src="/builtwith.js" strategy="afterInteractive" data-oid="_q17yf5" />
             </body>
         </html>
     );
