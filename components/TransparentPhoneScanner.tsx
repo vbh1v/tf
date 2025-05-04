@@ -31,31 +31,18 @@ const TransparentPhoneScanner = () => {
                         {/* Phone Notch */}
 
                         <div
-                            className="w-24 h-6 bg-gray-800 rounded-b-xl mb-4"
-                            data-oid="ue0a03p"
-                            key="olk-0ogt"
-                        ></div>
-
-                        {/* Barcode Scanner Area */}
-
-                        {/* Screen Text */}
-                        <div
-                            className="text-center mt-8 mb-4"
-                            data-oid="eh1.ux3"
-                            key="olk-wzIa"
-                        ></div>
-
-                        {/* Home Button / Scanner */}
-
-                        <div
-                            className="border border-green-400/40 rounded-lg flex flex-col items-center justify-center mt-12 mb-4 relative overflow-hidden h-[85px] w-[179px]"
+                            className="border border-green-400/40 rounded-lg flex flex-col items-center justify-center mt-12 mb-16 relative overflow-hidden h-[85px] w-[179px]"
                             data-oid="u8b63vk"
                             key="olk-Qpea"
                         >
                             {/* Barcode lines */}
+
+                            {/* Scanner light effect */}
+
                             <div
                                 className="w-32 h-16 flex justify-center items-center"
                                 data-oid="m369u8_"
+                                key="olk--x76"
                             >
                                 <div className="flex space-x-[2px]" data-oid="bj:kf41">
                                     {Array.from({ length: 20 }).map((_, i) => (
@@ -70,8 +57,6 @@ const TransparentPhoneScanner = () => {
                                     ))}
                                 </div>
                             </div>
-
-                            {/* Scanner light effect */}
                             <AnimatePresence data-oid="1a45zq6">
                                 {isScanning && (
                                     <motion.div
@@ -93,6 +78,39 @@ const TransparentPhoneScanner = () => {
                                 {isScanning ? 'SCANNING...' : 'READY'}
                             </div>
                         </div>
+
+                        {/* Barcode Scanner Area */}
+
+                        {/* Screen Text */}
+
+                        <div
+                            className="text-center mt-8 mb-4"
+                            data-oid="eh1.ux3"
+                            key="olk-wzIa"
+                        ></div>
+
+                        {/* Home Button / Scanner */}
+
+                        {/* Launch Market Button */}
+                        <motion.button
+                            className="absolute bottom-12 px-6 py-3 bg-green-600 text-white font-medium rounded-md border border-green-500 shadow-lg"
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: '0 0 15px rgba(74, 222, 128, 0.5)',
+                            }}
+                            whileTap={{ scale: 0.98 }}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{
+                                opacity: 1,
+                                y: 0,
+                                transition: { delay: 0.3 },
+                            }}
+                            onClick={() => alert('Market launched!')}
+                            data-oid="launch-market-btn"
+                            key="olk-kdNc"
+                        >
+                            Launch Market
+                        </motion.button>
 
                         {/* Scanner Label */}
                     </div>
