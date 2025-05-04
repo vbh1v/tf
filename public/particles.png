@@ -1,3 +1,4 @@
-// This is a placeholder for a binary image file
+// This is a base64 encoded small particle texture
+// It will be created as a PNG file// This is a placeholder for a binary image file
 // You'll need to create a particles.png file with a transparent background and small dots
 // or use a different approach for the particle effect

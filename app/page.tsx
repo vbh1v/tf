@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import TransparentPhoneScanner from '@/components/TransparentPhoneScanner';
 
 export default function Page() {
     const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
