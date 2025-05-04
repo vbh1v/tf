@@ -187,12 +187,31 @@ export default function Page() {
                                 The label speaks. We verify.
                             </p>
                             <div className="mb-12" data-oid="4:lh-qr" key="olk-zy7S">
-                                <div
-                                    className="max-w-full sm:max-w-md"
+                                <form
+                                    className="launchlist-form flex flex-col sm:flex-row gap-4 max-w-full sm:max-w-md"
+                                    action="https://getlaunchlist.com/s/nTWJuR"
+                                    method="POST"
                                     onMouseEnter={() => setIsHovering(true)}
                                     onMouseLeave={() => setIsHovering(false)}
                                     data-oid="yi:p39:"
-                                ></div>
+                                >
+                                    <input
+                                        name="email"
+                                        type="email"
+                                        placeholder="your@email.com"
+                                        className="bg-gray-900/50 border border-gray-700 px-4 py-3 focus:outline-none focus:border-green-500 flex-grow"
+                                        required
+                                        data-oid="to-vr-a"
+                                    />
+
+                                    <button
+                                        type="submit"
+                                        className="px-6 py-3 bg-green-600 hover:bg-green-700 transition-colors duration-300 text-white font-medium"
+                                        data-oid="23r525p"
+                                    >
+                                        Join Waitlist
+                                    </button>
+                                </form>
                             </div>
 
                             {/* Images moved to background */}
@@ -315,19 +334,31 @@ export default function Page() {
                             <h2 className="text-3xl md:text-5xl font-bold mb-8" data-oid="byhu10w">
                                 Ready to play with truth?
                             </h2>
-                            <div
-                                className="max-w-full sm:max-w-md mx-auto px-4 sm:px-0"
+                            <form
+                                className="launchlist-form flex flex-col sm:flex-row justify-center gap-4 max-w-full sm:max-w-md mx-auto px-4 sm:px-0"
+                                action="https://getlaunchlist.com/s/nTWJuR"
+                                method="POST"
                                 onMouseEnter={() => setIsHovering(true)}
                                 onMouseLeave={() => setIsHovering(false)}
                                 data-oid="hmhlukd"
                             >
-                                <div
-                                    className="launchlist-widget"
-                                    data-key-id="nTWJuR"
-                                    data-height="180px"
-                                    data-oid="veh.:08"
-                                ></div>
-                            </div>
+                                <input
+                                    name="email"
+                                    type="email"
+                                    placeholder="your@email.com"
+                                    className="bg-gray-900/50 border border-gray-700 px-4 py-3 focus:outline-none focus:border-green-500 flex-grow"
+                                    required
+                                    data-oid="9bkw.ct"
+                                />
+
+                                <button
+                                    type="submit"
+                                    className="px-6 py-3 bg-green-600 hover:bg-green-700 transition-colors duration-300 text-white font-medium"
+                                    data-oid="3-0z86u"
+                                >
+                                    Join Waitlist
+                                </button>
+                            </form>
                         </div>
                     </section>
                 </main>
