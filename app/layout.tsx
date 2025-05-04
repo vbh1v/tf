@@ -9,11 +9,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="en" data-oid="flv9ygx">
             <head data-oid="x39o.g2">
-                <Script
-                    src="https://getlaunchlist.com/js/widget.js"
-                    strategy="afterInteractive"
+                <script
+                    src="https://getlaunchlist.com/js/widget-diy.js"
+                    defer
                     data-oid="x:w8ni7"
-                />
+                ></script>
             </head>
             <body className="" data-oid="_w3-7nx">
                 {children}
