@@ -4,9 +4,11 @@ const nextConfig = {
     domains: ['i.imgur.com']
   },
   output: "standalone",
-  distDir: process.env.NODE_ENV === "production" ? ".next-prod" : ".next",
+  distDir: ".next",
   typescript: {
     ignoreBuildErrors: true
   }
 };
 module.exports = nextConfig;
+
+//distDir: process.env.NODE_ENV === "production" ? ".next-prod" : ".next",
