@@ -491,11 +491,7 @@ export default function Page() {
                                     <span className="relative" data-oid="a-h8e6k">
                                         It&apos;s not just verification.
                                         <br className="hidden md:block" data-oid="p-js8jw" />
-                                        It&apos;s a{' '}
-                                        <span className="text-green-400" data-oid="-69w9u9">
-                                            movement
-                                        </span>
-                                        .
+                                        It&apos;s a movement.
                                         <div
                                             className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-green-500/30"
                                             data-oid="k5tgpw9"
