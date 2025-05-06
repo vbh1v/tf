@@ -7,17 +7,11 @@ export const metadata: Metadata = {
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="en" data-oid="flv9ygx">
-            <head data-oid="x39o.g2">
-                <script
-                    src="https://getlaunchlist.com/js/widget-diy.js"
-                    defer
-                    data-oid="x:w8ni7"
-                ></script>
+        <html lang="en">
+            <head>
+                <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
             </head>
-            <body className="" data-oid="_w3-7nx">
-                {children}
-            </body>
+            <body className="">{children}</body>
         </html>
     );
 }

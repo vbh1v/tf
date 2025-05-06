@@ -16,16 +16,13 @@ const TransparentPhoneScanner = () => {
     }, []);
 
     return (
-        <div className="w-full max-w-3xl mx-auto my-12 relative" data-oid="bb-91nd">
-            <div className="flex items-center justify-center" data-oid="__kt:p1" key="olk-oeca">
+        <div className="w-full max-w-3xl mx-auto my-12 relative">
+            <div className="flex items-center justify-center">
                 {/* Product Items - Behind the phone */}
 
                 {/* Phone Device */}
-                <div className="relative" data-oid="3u2fuc1" key="olk-X_C5">
-                    <div
-                        className="border-2 border-green-400/50 rounded-[40px] relative flex flex-col items-center p-4 bg-gray-900/30 backdrop-blur-sm h-[590px] w-[290px] sm:w-[320px] md:w-[351px] transform scale-[0.85] sm:scale-90 md:scale-100"
-                        data-oid="3grp.89"
-                    >
+                <div className="relative">
+                    <div className="border-2 border-green-400/50 rounded-[40px] relative flex flex-col items-center p-4 bg-gray-900/30 backdrop-blur-sm h-[590px] w-[290px] sm:w-[320px] md:w-[351px] transform scale-[0.85] sm:scale-90 md:scale-100">
                         {/* Dynamic Island */}
                         <motion.div
                             className="w-[120px] h-[35px] bg-black rounded-full mt-2 mb-4 flex items-center justify-center relative overflow-hidden"
@@ -33,32 +30,21 @@ const TransparentPhoneScanner = () => {
                                 width: isScanning ? 150 : 120,
                                 transition: { duration: 0.3 },
                             }}
-                            data-oid="dynamic-island"
                         >
                             {/* Camera dot */}
-                            <div
-                                className="w-2 h-2 rounded-full bg-gray-700 absolute right-4"
-                                data-oid="iz4sb.w"
-                            ></div>
+                            <div className="w-2 h-2 rounded-full bg-gray-700 absolute right-4"></div>
 
                             {/* Dynamic content */}
-                            <AnimatePresence data-oid="b5_tein">
+                            <AnimatePresence>
                                 {isScanning && (
                                     <motion.div
                                         className="flex items-center space-x-2"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
-                                        data-oid="kmueqj3"
                                     >
-                                        <div
-                                            className="w-2 h-2 rounded-full bg-green-500 animate-pulse"
-                                            data-oid="50y:oz6"
-                                        ></div>
-                                        <span
-                                            className="text-[10px] text-green-400 font-mono"
-                                            data-oid="mbzh-.f"
-                                        >
+                                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                                        <span className="text-[10px] text-green-400 font-mono">
                                             SCANNING
                                         </span>
                                     </motion.div>
@@ -67,21 +53,13 @@ const TransparentPhoneScanner = () => {
                         </motion.div>
 
                         {/* Scanner in the middle */}
-                        <div
-                            className="border border-green-400/40 rounded-lg flex flex-col items-center justify-center relative overflow-hidden h-[85px] w-[179px] mt-[160px] mb-[160px]"
-                            data-oid="u8b63vk"
-                            key="olk-Qpea"
-                        >
+                        <div className="border border-green-400/40 rounded-lg flex flex-col items-center justify-center relative overflow-hidden h-[85px] w-[179px] mt-[160px] mb-[160px]">
                             {/* Barcode lines */}
 
                             {/* Scanner light effect */}
 
-                            <div
-                                className="w-32 h-16 flex justify-center items-center"
-                                data-oid="m369u8_"
-                                key="olk--x76"
-                            >
-                                <div className="flex space-x-[2px]" data-oid="bj:kf41">
+                            <div className="w-32 h-16 flex justify-center items-center">
+                                <div className="flex space-x-[2px]">
                                     {Array.from({ length: 20 }).map((_, i) => (
                                         <div
                                             key={i}
@@ -89,12 +67,11 @@ const TransparentPhoneScanner = () => {
                                             style={{
                                                 height: `${Math.max(8, Math.min(24, Math.random() * 24))}px`,
                                             }}
-                                            data-oid="fr64zeo"
                                         />
                                     ))}
                                 </div>
                             </div>
-                            <AnimatePresence data-oid="1a45zq6">
+                            <AnimatePresence>
                                 {isScanning && (
                                     <motion.div
                                         className="absolute w-full h-4 bg-gradient-to-b from-green-400/0 via-green-400/60 to-green-400/0 pointer-events-none"
@@ -102,16 +79,12 @@ const TransparentPhoneScanner = () => {
                                         animate={{ top: '100%' }}
                                         exit={{ opacity: 0 }}
                                         transition={{ duration: 2, ease: 'linear' }}
-                                        data-oid="32nkuhz"
                                     />
                                 )}
                             </AnimatePresence>
 
                             {/* Status text */}
-                            <div
-                                className="absolute bottom-2 text-xs text-green-400/80 font-mono"
-                                data-oid="szfx39k"
-                            >
+                            <div className="absolute bottom-2 text-xs text-green-400/80 font-mono">
                                 {isScanning ? 'SCANNING...' : 'READY'}
                             </div>
                         </div>
@@ -119,12 +92,8 @@ const TransparentPhoneScanner = () => {
                         {/* Barcode Scanner Area */}
 
                         {/* Screen Text */}
-                        <div
-                            className="text-center absolute bottom-[100px] w-full"
-                            data-oid="eh1.ux3"
-                            key="olk-wzIa"
-                        >
-                            <div className="text-sm text-green-400/80 font-mono" data-oid="c6df3o8">
+                        <div className="text-center absolute bottom-[100px] w-full">
+                            <div className="text-sm text-green-400/80 font-mono">
                                 {isScanning ? 'Processing...' : 'Aim at barcode'}
                             </div>
                         </div>
@@ -145,8 +114,6 @@ const TransparentPhoneScanner = () => {
                                 y: 0,
                                 transition: { delay: 0.3 },
                             }}
-                            data-oid="launch-market-btn"
-                            key="olk-kdNc"
                         >
                             Launch Market
                         </motion.button>

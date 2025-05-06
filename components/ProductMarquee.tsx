@@ -34,10 +34,7 @@ const ProductMarquee: React.FC<ProductMarqueeProps> = ({ direction = 'left', spe
     const allProducts = [...productImages, ...productImages, ...productImages];
 
     return (
-        <div
-            className="overflow-hidden w-full h-full absolute inset-0 pointer-events-none"
-            data-oid="_l91jo0"
-        >
+        <div className="overflow-hidden w-full h-full absolute inset-0 pointer-events-none">
             <motion.div
                 className="flex items-center gap-16 absolute"
                 style={{
@@ -55,7 +52,6 @@ const ProductMarquee: React.FC<ProductMarqueeProps> = ({ direction = 'left', spe
                         ease: 'linear',
                     },
                 }}
-                data-oid="w-ar7_1"
             >
                 {allProducts.map((product, index) => (
                     <div
@@ -66,7 +62,6 @@ const ProductMarquee: React.FC<ProductMarqueeProps> = ({ direction = 'left', spe
                             height: product.height,
                             opacity: 0.8,
                         }}
-                        data-oid="bj05vgm"
                     >
                         <Image
                             src={product.src}
@@ -74,7 +69,6 @@ const ProductMarquee: React.FC<ProductMarqueeProps> = ({ direction = 'left', spe
                             width={product.width}
                             height={product.height}
                             className="object-contain"
-                            data-oid="w2xtigb"
                         />
                     </div>
                 ))}
